@@ -1,6 +1,7 @@
 #include "downloader.hpp"
 #include "unzipper.hpp"
 #include "parser.hpp"
+#include "CreateProfile.hpp"
 #include <filesystem>
 #include <iostream>
 
@@ -8,7 +9,7 @@ int main() {
     const std::string url = "https://github.com/Cosmella-v/Orderly_SMP/blob/main/ModScriptPack.mrpack?raw=true";
     const std::string mrpackFile = "OrderlySMP.zip";
     const std::string extractDir = "temp_extract";
-    const std::string profileDir = "minecraft_profiles/OrderlySMP";
+    const std::string profileDir = "OrderlySMP";
 
     std::cout << "[*] Downloading mrpack...\n";
     if (!downloadFile(url, mrpackFile)) {
@@ -37,6 +38,7 @@ int main() {
     std::cout << "[*] Copying overrides...\n";
     copyOverrides(extractDir + "/overrides", profileDir);
 
-    std::cout << "[✓] Minecraft profile created at: " << profileDir << "\n";
+    std::cout << "[✓] Created Profile At "<< profileDir << "\nImporting this into the mc launcher" << "\n";
+    Process()
     return 0;
 }

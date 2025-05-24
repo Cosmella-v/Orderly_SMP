@@ -26,6 +26,8 @@ bool downloadFile(std::string url, const std::string& outputPath) {
         return false;
     }
 
+    std::cout << "Downloading: " << url;
+
     std::string address = url.substr(7);
     size_t slashPos = address.find('/');
     std::string host = address.substr(0, slashPos);

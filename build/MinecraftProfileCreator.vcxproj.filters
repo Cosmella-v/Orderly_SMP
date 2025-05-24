@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\momo2\Downloads\minecraft_profile_creator\main.cpp">
+    <ClCompile Include="C:\Users\momo2\Downloads\h\Orderly_SMP\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\momo2\Downloads\minecraft_profile_creator\downloader.cpp">
+    <ClCompile Include="C:\Users\momo2\Downloads\h\Orderly_SMP\downloader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\momo2\Downloads\minecraft_profile_creator\unzipper.cpp">
+    <ClCompile Include="C:\Users\momo2\Downloads\h\Orderly_SMP\unzipper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\momo2\Downloads\minecraft_profile_creator\parser.cpp">
+    <ClCompile Include="C:\Users\momo2\Downloads\h\Orderly_SMP\parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\momo2\Downloads\minecraft_profile_creator\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\momo2\Downloads\h\Orderly_SMP\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{0C50EE1E-F0E3-3FF3-B8E6-1085F6E34689}</UniqueIdentifier>
+      <UniqueIdentifier>{D62DB2B7-691F-32EF-B506-7E4AB0FE9B35}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
