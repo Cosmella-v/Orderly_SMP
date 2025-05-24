@@ -2,7 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-
+// before i added json.hpp lol
 std::vector<ModFile> parseModrinthIndex(const std::string& jsonFile) {
     std::ifstream in(jsonFile);
     std::stringstream buffer;
