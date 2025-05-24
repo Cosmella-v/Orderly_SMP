@@ -15,7 +15,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(cpr)
 
-add_executable(MinecraftProfileCreator
+add_executable(MinecraftProfileCreator MACOSX_BUNDLE
     main.cpp
     downloader.cpp
     unzipper.cpp
