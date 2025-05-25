@@ -88,6 +88,7 @@ void writejsonSomethin() {
         {"lastVersionId", "1.20.1-OrderlySMP"},
         {"gameDir", (fs::path(getMinecraftFolder()) / "installations" / "OrderlySMP").string()},
         {"name", "Orderly SMP"},
+        {"javaArgs", "-Xmx6G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M"},
         {"type", "custom"}
     };
 
