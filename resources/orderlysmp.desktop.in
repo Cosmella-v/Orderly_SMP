@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=@APP_NAME@
+Exec=@APP_EXEC@
+Icon=@APP_ICON@
+Type=Application
+Categories=Utility;
