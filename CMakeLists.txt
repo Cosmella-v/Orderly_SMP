@@ -55,11 +55,11 @@ if(WIN32)
     target_sources(OrderlySMPInstaller PRIVATE resources/icon.rc)
 
 elseif(APPLE)
-    find_library(COREGRAPHICS_FRAMEWORK CoreGraphics)
-    find_library(IMAGEIO_FRAMEWORK ImageIO)
-    find_library(COREFOUNDATION_FRAMEWORK CoreFoundation)
+    find_library(COREFOUNDATION_FRAMEWORK CoreFoundation REQUIRED)
+    find_library(COREGRAPHICS_FRAMEWORK CoreGraphics REQUIRED)
+    find_library(IMAGEIO_FRAMEWORK ImageIO REQUIRED)
 
-    target_link_libraries(OrderlySMPInstaller
+    target_link_libraries(OrderlySMPInstaller PRIVATE
         ${COREGRAPHICS_FRAMEWORK}
         ${IMAGEIO_FRAMEWORK}
     )
