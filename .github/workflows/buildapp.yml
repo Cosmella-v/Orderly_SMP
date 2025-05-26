@@ -21,9 +21,9 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt-get update && sudo apt-get install -y cmake
       
-      - name: Install OpenGL dependencies on Ubuntu
+      - name: Install dependencies on Ubuntu
         if: matrix.os == 'ubuntu-latest'
-        run: sudo apt-get update && sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev
+        run: sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev && sudo apt-get install -y libxrandr-dev
 
       - name: Install CMake on macOS
         if: matrix.os == 'macos-latest'
