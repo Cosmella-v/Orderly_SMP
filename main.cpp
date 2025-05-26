@@ -397,8 +397,8 @@ void glfwSetWindowIcon_Force(GLFWwindow* window) {
 #else
 void glfwSetWindowIcon_Force(GLFWwindow* window) {
 // todo (never)
-return
-}
+return;
+};
 #endif
 
 int main() {
