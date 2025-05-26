@@ -55,6 +55,15 @@ if(WIN32)
     target_sources(OrderlySMPInstaller PRIVATE resources/icon.rc)
 
 elseif(APPLE)
+    find_library(COREGRAPHICS_FRAMEWORK CoreGraphics)
+    find_library(IMAGEIO_FRAMEWORK ImageIO)
+    find_library(COREFOUNDATION_FRAMEWORK CoreFoundation)
+
+    target_link_libraries(OrderlySMPInstaller
+        ${COREGRAPHICS_FRAMEWORK}
+        ${IMAGEIO_FRAMEWORK}
+    )
+
     set(MACOSX_BUNDLE_ICON_FILE icon.icns)
     set_source_files_properties(resources/icon.icns PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
     set_target_properties(OrderlySMPInstaller PROPERTIES
