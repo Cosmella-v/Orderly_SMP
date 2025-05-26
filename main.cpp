@@ -337,6 +337,7 @@ void glfwSetWindowIcon_Force(GLFWwindow* window) {
     delete[] img.pixels;
 }
 #elif defined(__APPLE__)
+#include <ImageIO/ImageIO.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreGraphics/CoreGraphics.h>
 #include <GLFW/glfw3.h>
